@@ -4,10 +4,10 @@ Nouvelle version du site des **Mouv'Your Baudet**, pour remplacer ça : http://mo
 
 usage : 
 
-	**npm install**
-	**bower install**
-	**grunt server**
+	npm install
+	bower install
+	grunt server
 	
-Les fichiers ***.html** sont générés à partir des fichiers ***.tpl.html** (je n'ai pas mieux pour l'instant)
+Les fichiers **&#42;.html** sont générés à partir des fichiers **&#42;.tpl.html** (je n'ai pas mieux pour l'instant)
 
-La distribution ne fonctionne pas image.js blah blah blah ... work in progress
+La distribution ne fonctionne pas **image.js** blah blah blah ... work in progress
