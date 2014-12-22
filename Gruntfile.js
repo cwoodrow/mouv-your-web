@@ -118,10 +118,20 @@ module.exports = function (grunt) {
 			build : {
 				files : {
 					// files go here, like so:
-					"app/index.html" : "app/index.tpl.html",
-					"app/repertoire.html" : "app/repertoire.tpl.html",
-					"app/videos.html" : "app/videos.tpl.html",
-					"app/contact.html" : "app/contact.tpl.html"
+					".tmp/index.html" : "app/index.tpl.html",
+					".tmp/repertoire.html" : "app/repertoire.tpl.html",
+					".tmp/videos.html" : "app/videos.tpl.html",
+					".tmp/contact.html" : "app/contact.tpl.html"
+					
+				}
+			},
+			dist : {
+				files : {
+					// files go here, like so:
+					"dist/index.html" : "app/index.tpl.html",
+					"dist/repertoire.html" : "app/repertoire.tpl.html",
+					"dist/videos.html" : "app/videos.tpl.html",
+					"dist/contact.html" : "app/contact.tpl.html"
 					
 				}
 			},
@@ -404,7 +414,7 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('build', [
 			'clean:dist',
-			'bake:build',
+			'bake:dist',
 			'wiredep',
 			'useminPrepare',
 			'concurrent:dist',

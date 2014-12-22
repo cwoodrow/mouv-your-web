@@ -68,9 +68,3 @@ bower_components/
 
 build/
 dist/
-
-### ignore templated files ###
-app/contact.html
-app/index.html
-app/repertoire.html
-app/videos.html
